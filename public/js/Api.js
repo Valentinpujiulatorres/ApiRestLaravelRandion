@@ -89,7 +89,7 @@ function renderFormularioCrear() {
                 </div>
                 <div class="mb-3">
                     <label for="price" class="form-label">Price</label>
-                    <input type="float" class="form-control" id="price">
+                    <input type="number" class="form-control" id="price">
                 </div>
                 
                 <div class="mb-3">
