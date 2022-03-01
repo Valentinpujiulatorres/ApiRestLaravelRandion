@@ -36,7 +36,7 @@ async function getData(url) {
         <td>${element.name}</td>
         <td>${element.description}</td>
         <td>${element.price}</td>
-        <td>${element.qty}</td>
+        <td>${element.available}</td>
         <td><button id='${element.id}' class="btn btn-warning" onclick="destroy(this.id)">Delete</button></td>
       </tr>`
     });
