@@ -5,7 +5,7 @@ function destroy($id) {
 
     $elementErase = $id
 
-    fetch(`vpujiula.randion.es/ApiRestLaravelRandion/public/api/game/${$elementErase}/delete`, {
+    fetch(`http://vpujiula.randion.es/ApiRestLaravelRandion/public/api/game/${$elementErase}/delete`, {
             method: 'DELETE', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ async function getData(url) {
 
 
 }
-let myUrl = 'vpujiula.randion.es/ApiRestLaravelRandion/public/api/games'
+let myUrl = 'http://vpujiula.randion.es/ApiRestLaravelRandion/public/api/games'
 Content = getData(myUrl);
 //-------------------------------------------------------------------
 
@@ -60,7 +60,7 @@ function NewRecord() {
     let available = document.getElementById("available").value;
 
     const data = { name: `${name}`, description: `${description}`, price: `${price}`, available: `${available}` };
-    fetch('vpujiula.randion,es/ApiRestLaravelRandion/public/api/game/add', {
+    fetch('http://vpujiula.randion,es/ApiRestLaravelRandion/public/api/game/add', {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',
