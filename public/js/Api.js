@@ -75,7 +75,7 @@ function NewRecord() {
             console.error('Error:', error);
         });
 
-    //window.location.reload();
+    window.location.reload();
 }
 
 function renderFormularioCrear() {
