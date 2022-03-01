@@ -60,7 +60,7 @@ function NewRecord() {
     let available = document.getElementById("available").value;
 
     const data = { name: `${name}`, description: `${description}`, price: `${price}`, available: `${available}` };
-    fetch('http://vpujiula.randion,es/ApiRestLaravelRandion/public/api/game/add', {
+    fetch('http://vpujiula.randion.es/ApiRestLaravelRandion/public/api/game/add', {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ function NewRecord() {
             console.error('Error:', error);
         });
 
-    window.location.reload();
+    //window.location.reload();
 }
 
 function renderFormularioCrear() {
