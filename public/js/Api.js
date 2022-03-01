@@ -29,7 +29,7 @@ async function getData(url) {
 
     Items = Data;
     //Cambiar products por el item en cuestion que retorna el fetch 
-    content = Items.products;
+    content = Items.games;
 
     content.forEach(element => {
         HTML += ` <tr>
@@ -57,7 +57,7 @@ function NewRecord() {
     let name = document.getElementById("name").value;
     let description = document.getElementById("description").value;
     let price = document.getElementById("price").value;
-    let qty = document.getElementById("available").value;
+    let available = document.getElementById("available").value;
 
     const data = { name: `${name}`, description: `${description}`, price: `${price}`, available: `${available}` };
     fetch('vpujiula.randion,es/ApiRestLaravelRandion/public/api/game/add', {
