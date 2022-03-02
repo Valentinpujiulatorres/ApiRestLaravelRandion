@@ -26,6 +26,31 @@ function edit($id) {
     let $ID;
     $ID = $id;
     console.log('Ill prepare the edit operation :', $ID);
+
+    let name = alert('Give  me a name')
+
+    console.log($name);
+
+    /* const data = { name: `${name}`, description: `${description}`, price: `${price}`, available: `${available}` };
+    fetch('http://vpujiula.randion.es/ApiRestLaravelRandion/public/api/game/add', {
+            method: 'POST', // or 'PUT'
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+
+    window.location.reload();
+ */
+
+
 }
 
 //-------------------------------------------------------------------
