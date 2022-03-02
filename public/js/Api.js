@@ -1,8 +1,5 @@
 let HTML = [];
 
-function update($id) {
-    console.log($id)
-}
 
 function destroy($id) {
     console.log('You are destroying 1 element :', $id);
@@ -104,4 +101,8 @@ function renderFormularioCrear() {
                 <button type="submit" onclick="NewRecord()" class="btn btn-primary"> Crear </button>
                
                 `;
+}
+
+function update($id) {
+    console.log($id)
 }
