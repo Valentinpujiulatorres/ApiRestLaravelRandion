@@ -27,9 +27,12 @@ function edit($id) {
     $ID = $id;
     console.log('Ill prepare the edit operation :', $ID);
 
-    let name = alert('Give  me a name')
+    let name = prompt('Give  me a name');
+    let description = prompt('Description:');
 
-    console.log($name);
+    console.log(name, description);
+
+
 
     /* const data = { name: `${name}`, description: `${description}`, price: `${price}`, available: `${available}` };
     fetch('http://vpujiula.randion.es/ApiRestLaravelRandion/public/api/game/add', {
