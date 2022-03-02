@@ -136,6 +136,7 @@ function renderFormularioCrear() {
                 <div class="mb-3">
                     <label for="available" class="form-label">Available</label>
                     <input type="checkbox" checked='1'  id="available"  name="available" />
+                    <input type="hidden" value='0'  id="available"  name="available" />
                 </div>
                 <button type="submit" onclick="NewRecord()" class="btn btn-primary"> Crear </button>
                
