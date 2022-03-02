@@ -38,7 +38,7 @@ async function getData(url) {
         <td>${element.price}</td>
         <td>${element.available}</td>
         <td><button id='${element.id}' class="btn btn-warning" onclick="destroy(this.id)">Delete</button></td>
-        <td>Hola</td>
+        <td>  <button id='${element.id}' onclick="">Edit</button>  </td>
       </tr>`
     });
 
@@ -97,5 +97,6 @@ function renderFormularioCrear() {
                     <label for="available" class="form-label">Available</label>
                     <input type="checkbox" checked="1" id="available" />
                 </div>
-                <button type="submit" onclick="NewRecord()" class="btn btn-primary"> Crear </button>`;
+                <button type="submit" onclick="NewRecord()" class="btn btn-primary"> Crear </button>
+                `;
 }
