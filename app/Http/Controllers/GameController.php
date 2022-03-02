@@ -59,11 +59,11 @@ class GameController extends Controller
 
         $game = Game::find($id);
         if($game){
-
+            
             $game->name = $request->name;
             $game->description = $request->description;
             $game->price = $request->price;
-            $game->available = $request->available ? 1 : 0 ?? 0;;
+            $game->available = $request->available;
             $game->update();
 
             return response()->json(['Item Updated Successfully'],200);
