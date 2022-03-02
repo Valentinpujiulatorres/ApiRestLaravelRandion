@@ -27,10 +27,12 @@ function edit($id) {
     $ID = $id;
     console.log('Ill prepare the edit operation :', $ID);
 
-    let name = prompt('Give  me a name');
-    let description = prompt('Description:');
+    let name = prompt("Enter New Item's name");
+    let description = prompt('New Description');
+    let price = prompt("Enter New Item's price");
+    let available = prompt(`<input type="checkbox" value="true">Available?</input>`)
 
-    console.log(name, description);
+    console.log(name, description, price, available);
 
 
 
