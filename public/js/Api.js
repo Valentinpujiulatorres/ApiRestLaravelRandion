@@ -20,6 +20,12 @@ function destroy($id) {
     window.location.reload();
 
 }
+
+
+function edit($id) {
+    console.log('Ill prepare the edit operation :', $id);
+}
+
 //-------------------------------------------------------------------
 //Funcion de retorno de datos (JSON-api-endpoint)
 async function getData(url) {
@@ -39,7 +45,7 @@ async function getData(url) {
         <td>${element.price}</td>
         <td>${element.available}</td>
         <td><button id='${element.id}' class="btn btn-warning" onclick="destroy(this.id)">Delete</button></td>
-        <td><button id='${element.id}' class="btn btn-warning" onclick="Edit(this.id)">Edit</button></td>
+        <td><button id='${element.id}' class="btn btn-warning" onclick="edit(this.id)">Edit</button></td>
         </tr>`
     });
 
@@ -101,8 +107,4 @@ function renderFormularioCrear() {
                 <button type="submit" onclick="NewRecord()" class="btn btn-primary"> Crear </button>
                
                 `;
-}
-
-function Edit($id) {
-    console.log('Ill prepare the edit operation :', $id);
 }
