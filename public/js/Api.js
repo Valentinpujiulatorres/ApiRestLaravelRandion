@@ -39,7 +39,7 @@ async function getData(url) {
         <td>${element.price}</td>
         <td>${element.available}</td>
         <td><button id='${element.id}' class="btn btn-warning" onclick="destroy(this.id)">Delete</button></td>
-        <td><button id='${element.id}' class="btn btn-warning" onclick="update(this.id)">Edit</button></td>
+        <td><button id='${element.id}' class="btn btn-warning" onclick="Edit(this.id)">Edit</button></td>
         </tr>`
     });
 
@@ -103,6 +103,6 @@ function renderFormularioCrear() {
                 `;
 }
 
-function update($id) {
+function Edit($id) {
     console.log($id)
 }
