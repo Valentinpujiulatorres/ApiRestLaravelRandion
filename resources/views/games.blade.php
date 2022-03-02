@@ -11,6 +11,7 @@
     <div class="container mt-2" id="main" >
 
         <H2>Api Items</H2>
+        <button  onclick="renderFormularioCrear()" class="btn btn-primary">New Item</button>
         
         <table class="table">
     <thead>
@@ -20,8 +21,6 @@
         <th>Price</th>
         <th>Available</th>
         <th>Delete</th>
-        <th>Edit</th>
-        <button  onclick="renderFormularioCrear()" class="btn btn-primary">New Item</button>
       </tr>
     </thead>
     <tbody id="response">
