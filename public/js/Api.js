@@ -23,7 +23,9 @@ function destroy($id) {
 
 
 function edit($id) {
-    console.log('Ill prepare the edit operation :', $id);
+
+    $id = $ID
+    console.log('Ill prepare the edit operation :', $ID);
 }
 
 //-------------------------------------------------------------------
