@@ -33,6 +33,9 @@ function edit($id) {
     let price = document.getElementById("price").value;
     let available = document.getElementById("available").value;
 
+
+    console.log(available);
+
     const data = { name: `${name}`, description: `${description}`, price: `${price}`, available: `${available}` };
 
     fetch(`http://vpujiula.randion.es/ApiRestLaravelRandion/public/api/game/${$ID}/update`, {
@@ -50,7 +53,7 @@ function edit($id) {
             console.error('Error:', error);
         });
 
-    window.location.reload();
+    //window.location.reload();
 
 
 
