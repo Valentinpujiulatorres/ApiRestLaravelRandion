@@ -21,6 +21,7 @@ function destroy($id) {
 
 }
 
+//-------------------------------------------------------------------
 
 function edit($id) {
     let $ID;
@@ -89,6 +90,7 @@ async function getData(url) {
 }
 let myUrl = 'http://vpujiula.randion.es/ApiRestLaravelRandion/public/api/games'
 Content = getData(myUrl);
+
 //-------------------------------------------------------------------
 
 function NewRecord() {
@@ -116,6 +118,8 @@ function NewRecord() {
     window.location.reload();
 }
 
+//-------------------------------------------------------------------
+
 function renderFormularioCrear() {
     document.getElementById('formulario').innerHTML = `<div class="mb-3">
                     <label for="name" class="form-label">Name</label>
@@ -138,6 +142,8 @@ function renderFormularioCrear() {
                
                 `;
 }
+
+//-------------------------------------------------------------------
 
 function renderFormularioEditar($id) {
     let EditID = $id
