@@ -24,7 +24,7 @@ function destroy($id) {
 
 function edit($id) {
     let $ID;
-    $id = $ID
+    $ID = $id;
     console.log('Ill prepare the edit operation :', $ID);
 }
 
