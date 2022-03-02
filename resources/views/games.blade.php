@@ -22,6 +22,7 @@
         <th>Price</th>
         <th>Available</th>
         <th>Delete</th>
+        <th>Update</th>
       </tr>
     </thead>
     <tbody id="response">
