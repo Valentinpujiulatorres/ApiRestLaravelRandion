@@ -50,7 +50,7 @@ function edit($id) {
             console.error('Error:', error);
         });
 
-    //window.location.reload();
+    window.location.reload();
 
 
 
