@@ -27,14 +27,6 @@ function edit($id) {
     $ID = $id;
     console.log('Ill prepare the edit operation :', $ID);
 
-    let name = prompt("Enter New Item's name");
-    let description = prompt('New Description');
-    let price = prompt("Enter New Item's price");
-    let available = prompt(`<input type="checkbox" value="true">Available?</input>`)
-
-    console.log(name, description, price, available);
-
-
 
     /* const data = { name: `${name}`, description: `${description}`, price: `${price}`, available: `${available}` };
     fetch('http://vpujiula.randion.es/ApiRestLaravelRandion/public/api/game/add', {
@@ -77,7 +69,7 @@ async function getData(url) {
         <td>${element.price}</td>
         <td>${element.available}</td>
         <td><button id='${element.id}' class="btn btn-warning" onclick="destroy(this.id)">Delete</button></td>
-        <td><button id='${element.id}' class="btn btn-warning" onclick="edit(${element.id})">Edit</button></td>
+        <td><button id='${element.id}' class="btn btn-warning" onclick="renderFormularioEditar(${element.id})">Edit</button></td>
         </tr>`
     });
 
@@ -137,6 +129,30 @@ function renderFormularioCrear() {
                     <input type="checkbox" checked="1" id="available" />
                 </div>
                 <button type="submit" onclick="NewRecord()" class="btn btn-primary"> Crear </button>
+               
+                `;
+}
+
+function renderFormularioEditar($id) {
+    let EditID = $id
+    document.getElementById('formulario').innerHTML = `<div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" value="">
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">description</label>
+                    <input type="text" class="form-control" id="description">
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Price</label>
+                    <input type="number" class="form-control" id="price">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="available" class="form-label">Available</label>
+                    <input type="checkbox" checked="1" id="available" />
+                </div>
+                <button type="submit" onclick="edit(${EditID})" class="btn btn-success"> Editar </button>
                
                 `;
 }
