@@ -28,9 +28,15 @@ function edit($id) {
     console.log('Ill prepare the edit operation :', $ID);
 
 
-    /* const data = { name: `${name}`, description: `${description}`, price: `${price}`, available: `${available}` };
-    fetch('http://vpujiula.randion.es/ApiRestLaravelRandion/public/api/game/add', {
-            method: 'POST', // or 'PUT'
+    let name = document.getElementById("name").value;
+    let description = document.getElementById("description").value;
+    let price = document.getElementById("price").value;
+    let available = document.getElementById("available").value;
+
+    const data = { name: `${name}`, description: `${description}`, price: `${price}`, available: `${available}` };
+
+    fetch(`http://vpujiula.randion.es/ApiRestLaravelRandion/public/api/game/${$ID}/update`, {
+            method: 'PUT', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -45,7 +51,7 @@ function edit($id) {
         });
 
     window.location.reload();
- */
+
 
 
 }
