@@ -19,7 +19,8 @@
         <th>Description</th>
         <th>Price</th>
         <th>Available</th>
-        <th>Action</th>
+        <th>Delete</th>
+        <th>Edit</th>
         <button  onclick="renderFormularioCrear()" class="btn btn-primary">New Item</button>
       </tr>
     </thead>
