@@ -40,7 +40,7 @@ class GameController extends Controller
         $game->name = $request->name;
         $game->description = $request->description;
         $game->price = $request->price;
-        $game->available = $request->available;
+        $game->available = $request->has('available');
        
         $game->save();
 
