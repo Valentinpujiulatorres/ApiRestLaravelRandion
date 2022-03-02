@@ -18,7 +18,7 @@ class CreateGamesTable extends Migration
             $table->string('name');
             $table->string('description');
             $table->float('price');
-            $table->boolean('available')->default('false');
+            $table->boolean('available');
             $table->timestamps();
         });
     }
