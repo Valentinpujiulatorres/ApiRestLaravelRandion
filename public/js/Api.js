@@ -104,5 +104,5 @@ function renderFormularioCrear() {
 }
 
 function Edit($id) {
-    console.log($id)
+    console.log('Ill prepare the edit operation :', $id);
 }
