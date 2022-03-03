@@ -159,7 +159,7 @@ function renderFormularioEditar($id) {
                 
                 <div class="mb-3">
                     <label for="available" class="form-label">Available</label>
-                    <input type="checkbox" checked='1' id="available" />
+                    <input type="checkbox" checked='0' id="available" />
                 </div>
                 <button type="submit" onclick="edit(${EditID})" class="btn btn-success"> Editar </button>
                
