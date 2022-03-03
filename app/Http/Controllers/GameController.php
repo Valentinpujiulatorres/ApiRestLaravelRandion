@@ -40,7 +40,7 @@ class GameController extends Controller
         $game->name = $request->name;
         $game->description = $request->description;
         $game->price = $request->price;
-        $game->available = $request->has('available');
+        $game->available = $request->available;
        
         $game->save();
 
@@ -59,7 +59,6 @@ class GameController extends Controller
 
         $game = Game::find($id);
         if($game){
-            
             $game->name = $request->name;
             $game->description = $request->description;
             $game->price = $request->price;
